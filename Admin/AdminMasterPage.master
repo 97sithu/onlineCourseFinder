@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../style.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/owl.carousel.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+  <!-- Page Preloder -->
+	<%--<div id="preloder">
+		<div class="loader"></div>
+	</div>--%>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="../img/logo1.png" alt=""/>
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+                            <li><a href="Home.aspx">Home</a></li> 
+							<li><a href="Admin.aspx">Admin</a></li> 
+							<li><a href="Category.aspx">Category</a></li>
+							<li><a href="SubCategory.aspx">SubCategory</a></li>
+							<li><a href="Lecturer.aspx">Lecturer</a></li>
+							<li><asp:LinkButton ID="Logout" runat="server" OnClick="Logout_Click">Logout</asp:LinkButton></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section set-bg"> 
+		<div class="container">
+			<div class="hero-text text-white">
+				<h2>Get The Best Free Online Courses</h2>
+				<p>Star Online is the best webister for online course search with different virienty of <br> Cateogries and will able to choose different courses with the world best experienced teachers.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<%--<form class="intro-newslatter">
+						<input type="text" placeholder="Name"/>
+						<input type="text" class="last-s" placeholder="E-mail"/>
+						<button class="site-btn">Sign Up Now</button>
+					</form>--%>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+     </asp:ContentPlaceHolder>
+        <footer>
+   <div class="footer-bottom">
+			<div class="footer-warp">
+				<ul class="footer-menu">
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+       <%-- <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/mixitup.min.js"></script>
+        <script src="../js/circle-progress.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/main.js"></script>--%>
+        </form>
+</body>
+</html>
